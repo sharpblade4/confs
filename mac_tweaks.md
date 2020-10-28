@@ -1,10 +1,11 @@
 # mac tweaks
 ### Mouse:
 * DROPPED: Try razer for mac to fix external mouse wheel → BROKE MAC.
-### Keys:
+### Keys: 
 * Key repeat instead of window: defaults write -g ApplePressAndHoldEnabled -bool true  .
-* home/end fix by creating a .dict file as said in https://apple.stackexchange.com/questions/16135/remap-home-and-end-to-beginning-and-end-of-line
 * Replaced modifiers command and control (swapped) for razer external keyboard, done via macos settings 'edit modifiers' for specific external device.  Ctrl=Command[], Win=Ctrl^, Alt=Option&.
+* *Update 28.10.2020*: trying to use mac way, applies to all bullets below. 
+* home/end fix by creating a .dict file as said in https://apple.stackexchange.com/questions/16135/remap-home-and-end-to-beginning-and-end-of-line . 
 * DROPPED:  Karabiner https://github.com/tekezo/Karabiner with `complex rules` enabled and imported from “PC-Style shortcuts”, while removing “Options(Alt)+tab to switch applications” so it won’t collide with AltTab app. Also from “Windows shortcuts on MacOS” imported (and prioritized) “Shift+End” and “Shift+Home”.
 ### Window management:
 * AltTab:
@@ -23,14 +24,15 @@
 	autoload -Uz compinit && compinit
 	bindkey "^[[A" history-beginning-search-backward
 	bindkey "^[[B" history-beginning-search-forward
-	alias l='ls -lG'
-	bindkey "\033[5C" forward-word
-	bindkey "\033[5D" backward-word
-	bindkey "^[[3~" delete-char
-	bindkey  "\033[H"   beginning-of-line
-	bindkey  "\005"   end-of-line
-	export PROMPT='%m %B%70<..<%~%b %(!.#.>) '
+	alias l='ls -lGh'
+	#bindkey "\033[5C" forward-word
+	#bindkey "\033[5D" backward-word
+	#bindkey "^[[3~" delete-char
+	#bindkey  "\033[H"   beginning-of-line
+	#bindkey  "\005"   end-of-line
+	export PROMPT='%m:%B%70<..<%~%b %(!.#.>) '
 	alias python="python3"
+	setopt interactivecomments
 	```
 * DROPPED: Oh my zsh → (annoying tab appeared). Could be fixed with iterm2 though.
 ### Vimrc minimal:
