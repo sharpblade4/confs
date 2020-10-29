@@ -44,12 +44,24 @@ set ignorecase
 set smartcase
 set hlsearch
 ```
-### KeepAlive (Leave mac on. AppleScript\nCommand:)
-* ```
+### AppleScripts:
+* run by `osascript ~/Documents/keepAlive.scpt`
+* KeepAlive (leaves mac on)
+	```
 	repeat
 		tell application "System Events" to keystroke "0" using command down
-		tell application "System Events" to keystroke "0" using command dow
+		tell application "System Events" to keystroke "0" using command down
 		delay 340
 	end repeat
 	```
-* osascript ~/Documents/every14minUndoRedo.scpt
+	
+* HealthReminder
+	```
+	tell application "System Events" to activate
+	repeat
+		with timeout of 1800 seconds
+			tell application "System Events" to display dialog "Get up from the chair and stretch" with icon note buttons {"Done!"}
+		end timeout
+		delay 1800
+	end repeat
+	```
