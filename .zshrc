@@ -10,8 +10,7 @@ bindkey "^[[B" history-beginning-search-forward
 export PROMPT='%m:%B%70<..<%~%b %(!.#.>) '
 
 # aliases
-alias l='ls -lGhF --color=always'
-alias grep='grep --color=always'
+alias l='ls -lGhF'
 alias cp='cp -i'
 alias mv='mv -i'
 alias python="python3"
