@@ -52,4 +52,5 @@ set hlsearch
 	end repeat
 	```
 ### Widgets
-*  installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/
+* installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/
+* to change order of icons in menu-bar, press CMD and drag the icon. 
