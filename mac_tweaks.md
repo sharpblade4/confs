@@ -51,3 +51,5 @@ set hlsearch
 		delay 1800
 	end repeat
 	```
+### Widgets
+*  installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/
