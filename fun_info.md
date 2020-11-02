@@ -51,17 +51,17 @@ This is called monte-carlo integration, and can be applied to integrate more com
 + How was the black hole imaged, in a nutshell: the size and distance of the black hole requires a telescope the size of ~earth so a network of 10 radio antennas on different locations used together with a VLBI and calibration algorithms to gather lots of data. If we had radio antennas anywhere on earth it would be enough to get the image, but we only have 10 sample points, on a moving planet (so those points turn into splines - still not enough). The data creates a complex set of constrains for many possible images. To choose which to reconstruct from the search space, a model was trained to predict which is the most likely to be of a black hole. Much of the challenge was to avoid biasing the model into synthetic assumptions.
 
 + Compiler-bombs are small code sources that produce very large compiled files. For the sake of fun only, the goal is to create the smallest source code that will generate more than 4GB of compiled code. We'll start with c. While most of you may think macros will do the trick, a better and shorter bomb can be created by:
-echo "main[-1u]={1};" >> bomb.c
-gcc -mcmodel=medium bomb.c -o bomb
+`echo "main[-1u]={1};" >> bomb.c
+gcc -mcmodel=medium bomb.c -o bomb`
 (don't try at home... or work)
 How? It is not mandatory for 'main'  to be a function, but rather exist in the compiled output (here it is an untyped array allowed by c). Regarding the size, since the array is initialized with its first element to 1 and the rest to zero, the compiler actually saves the entire array, at the size of the higher edge of an unsigned int. the mcmodel flag is to allow an array larger than 2GB to be saved in memory without restrictions.
 In the next episode: a python's bomb.  credit [https://codegolf.stackexchange.com/questions/69189/build-a-compiler-bomb]
 
-+ As promised, this time we'll build a compiler bomb in python. Python code is compiled into some byte-code which is then executed. Those are the .pyc files that python generates (python3 builds them in __pycache__ dir). Our bomb will be in python3:
-echo "(1<<19**8,)*2" > bomb.py
-python3 -m py_compile bomb.py
++ As promised, this time we'll build a compiler bomb in python. Python code is compiled into some byte-code which is then executed. Those are the .pyc files that python generates (python3 builds them in `__pycache__` dir). Our bomb will be in python3:
+`echo "(1<<19**8,)*2" > bomb.py
+python3 -m py_compile bomb.py`
 (don't try at home or work)
-Explanation: we exploited python3's constant folding that happens as part of its compilation optimizations. This will save the explicit constant number instead of the calculation into the pyc file. 1<<19**8, just below 2**32, is the number with length that is contained by the maximum in python which is 4B. With it, we created 2GB and since tuples are immutable, multiplying them is also calculated in the constant folding therefore we can generate this 4GB pyc.
+Explanation: we exploited python3's constant folding that happens as part of its compilation optimizations. This will save the explicit constant number instead of the calculation into the pyc file. `1<<19**8`, just below `2**32`, is the number with length that is contained by the maximum in python which is 4B. With it, we created 2GB and since tuples are immutable, multiplying them is also calculated in the constant folding therefore we can generate this 4GB pyc.
 
 + Microsoft is going to release WSL2 in the upcoming June. An integrated linux sub-system inside Windows, that unlike its predecessor, will run with native linux kernel on a lightweight virtual machine. I use WSL(1) quite much (mainly for ssh, small developments, and searching things with grep), and I'm eager to see the next one.
 
