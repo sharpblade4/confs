@@ -19,21 +19,7 @@
 	* In preference->profiles->keys-> choose “Natural typing”
 * [not sure this is needed for iterm2, done for "Terminal"] Terminal keys (via preferences): adding `home→ \033[H` (ESC[H) + `end→ \005` (WinKeyCrtrl+E) + `alt+backspace → \033\177`.
 * ~/.zshrc
-	```
-	zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-	autoload -Uz compinit && compinit
-	bindkey "^[[A" history-beginning-search-backward
-	bindkey "^[[B" history-beginning-search-forward
-	alias l='ls -lGh'
-	#bindkey "\033[5C" forward-word
-	#bindkey "\033[5D" backward-word
-	#bindkey "^[[3~" delete-char
-	#bindkey  "\033[H"   beginning-of-line
-	#bindkey  "\005"   end-of-line
-	export PROMPT='%m:%B%70<..<%~%b %(!.#.>) '
-	alias python="python3"
-	setopt interactivecomments
-	```
+	* see https://github.com/sharpblade4/confs/blob/main/.zshrc
 * DROPPED: Oh my zsh → (annoying tab appeared). Could be fixed with iterm2 though.
 ### Vimrc minimal:
 ```
