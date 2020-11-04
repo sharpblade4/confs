@@ -21,15 +21,8 @@
 * ~/.zshrc
 	* see https://github.com/sharpblade4/confs/blob/main/.zshrc
 * DROPPED: Oh my zsh → (annoying tab appeared). Could be fixed with iterm2 though.
-### Vimrc minimal:
-```
-syntax on
-set expandtab
-set number
-set ignorecase
-set smartcase
-set hlsearch
-```
+* ~/.vimrc
+	@ refer to https://github.com/sharpblade4/confs/blob/main/.vimrc
 ### AppleScripts:
 * run by `osascript ~/Documents/keepAlive.scpt`
 * KeepAlive (leaves mac on)
@@ -52,5 +45,5 @@ set hlsearch
 	end repeat
 	```
 ### Widgets
-* installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/
-* to change order of icons in menu-bar, press CMD and drag the icon. 
+* Installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/
+* To change order of icons in menu-bar, press CMD and drag the icon. 
