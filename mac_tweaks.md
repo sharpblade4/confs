@@ -15,10 +15,13 @@
 * Continue where you left off in chrome: exit by command+Q and not cached.
 * To minimize all windows, press `Command+Options+H+M` or focus on non-finder window and press `Command+Options+MouseClickOnDesktopArea` . 
 ### Terminal:
-* Iterm2
+* iTerm2
 	* Install iterm2 instead of the default macos terminal. [IMPORTANT STEP for tmux].
 	* In preference->profiles->keys-> choose “Natural typing”
-	* To allow tmux prefix be cmd+b and vim window switch to be cmd+w (both instead of ctrl+b/w), map `cmd+w` to "0x17" and `cmd+b` to "0x02" via iTerm2 perefences --> Keys --> Key Bindings --> + --> map by pressing the cmd+b and choosing to 'send hex' with the code.
+	* Key remappings. To allow tmux prefix be cmd+b and vim window switch to be cmd+w (both instead of ctrl+b/w), and vim redo without iterm2 refresh. Done via iTerm2 perefences --> Keys --> Key Bindings --> + --> map by pressing the cmd+b and choosing to 'send hex' with the code. Hex codes taken from  https://phanderson.com/C/ascii.html .
+		* map `cmd+w` to "0x17" 
+		* map `cmd+b` to "0x02"
+		* map `cmd+r` ro "0x12"
 * [not sure this is needed for iterm2, done for "Terminal"] Terminal keys (via preferences): adding `home→ \033[H` (ESC[H) + `end→ \005` (WinKeyCrtrl+E) + `alt+backspace → \033\177`.
 * ~/.zshrc : refer to https://github.com/sharpblade4/confs/blob/main/.zshrc
 * DROPPED: Oh my zsh → (annoying tab appeared). Could be fixed with iterm2 though.
