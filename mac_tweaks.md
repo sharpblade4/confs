@@ -18,12 +18,11 @@
 * Iterm2
 	* Install iterm2 instead of the default macos terminal. [IMPORTANT STEP for tmux].
 	* In preference->profiles->keys-> choose “Natural typing”
+	* To allow tmux prefix be cmd+b and vim window switch to be cmd+w (both instead of ctrl+b/w), map `cmd+w` to "0x17" and `cmd+b` to "0x02" via iTerm2 perefences --> Keys --> Key Bindings --> + --> map by pressing the cmd+b and choosing to 'send hex' with the code.
 * [not sure this is needed for iterm2, done for "Terminal"] Terminal keys (via preferences): adding `home→ \033[H` (ESC[H) + `end→ \005` (WinKeyCrtrl+E) + `alt+backspace → \033\177`.
-* ~/.zshrc
-	* see https://github.com/sharpblade4/confs/blob/main/.zshrc
+* ~/.zshrc : refer to https://github.com/sharpblade4/confs/blob/main/.zshrc
 * DROPPED: Oh my zsh → (annoying tab appeared). Could be fixed with iterm2 though.
-* ~/.vimrc
-	@ refer to https://github.com/sharpblade4/confs/blob/main/.vimrc
+* ~/.vimrc : refer to https://github.com/sharpblade4/confs/blob/main/.vimrc
 ### AppleScripts:
 * run by `osascript ~/Documents/keepAlive.scpt`
 * KeepAlive (leaves mac on)
