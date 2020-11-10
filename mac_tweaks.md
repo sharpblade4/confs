@@ -13,6 +13,7 @@
 	* Added com.cisco.Cisco-AnyConnect-Secure-Mobility-Client to blacklist (found by the value of CFBundleIdentifier key in /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app/Contents/Info.plist).
 * Installed “rectangle” (new spectacle) to align windows. https://github.com/rxhanson/Rectangle   . Changed hotkey to Winkey+Arrow for left/right half attachment, Maximize and Restore. 
 * Continue where you left off in chrome: exit by command+Q and not cached.
+* To minimize all windows, press `Command+Options+H+M` or focus on non-finder window and press `Command+Options+MouseClickOnDesktopArea` . 
 ### Terminal:
 * Iterm2
 	* Install iterm2 instead of the default macos terminal. [IMPORTANT STEP for tmux].
