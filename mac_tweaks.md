@@ -48,5 +48,5 @@
 	end repeat
 	```
 ### Widgets
-* Installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/
+* Installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/ . Set the format to `E dd/MM/YYYY H:mm` and hidden icon+events.
 * To change order of icons in menu-bar, press CMD and drag the icon. 
