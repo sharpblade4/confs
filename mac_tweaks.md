@@ -15,6 +15,7 @@
 * Installed “rectangle” (new spectacle) to align windows. https://github.com/rxhanson/Rectangle   . Changed hotkey to Winkey+Arrow for left/right half attachment, Maximize and Restore. 
 * Continue where you left off in chrome: exit by command+Q and not cached.
 * To minimize all windows, press `Command+Options+H+M` or focus on non-finder window and press `Command+Options+MouseClickOnDesktopArea` . 
+* Switch user while leaving current on: run from terminal  ` "/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession" -suspend`
 ### Terminal:
 * iTerm2
 	* Install iterm2 instead of the default macos terminal. [IMPORTANT STEP for tmux].
