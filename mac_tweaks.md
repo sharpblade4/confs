@@ -7,6 +7,7 @@
 * *Update 28.10.2020*: trying to use mac way, applies to all bullets below. 
 * home/end fix by creating a .dict file as said in https://apple.stackexchange.com/questions/16135/remap-home-and-end-to-beginning-and-end-of-line . 
 * DROPPED:  Karabiner https://github.com/tekezo/Karabiner with `complex rules` enabled and imported from “PC-Style shortcuts”, while removing “Options(Alt)+tab to switch applications” so it won’t collide with AltTab app. Also from “Windows shortcuts on MacOS” imported (and prioritized) “Shift+End” and “Shift+Home”.
+* To use hebrew but press Shift/Capslock to insert capitalized english letters, remove "Hebrew" from the input languages (by pressing `-`) and add new input language (by pressing `+`) and type in the search textbox `Hebrew - PC`. Solution credit: https://superuser.com/a/1256220. 
 ### Window management:
 * AltTab:
 	* Installed https://github.com/lwouis/alt-tab-macos   good old alttab..  
