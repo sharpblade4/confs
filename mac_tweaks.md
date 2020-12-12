@@ -29,7 +29,7 @@
 	* Added com.cisco.Cisco-AnyConnect-Secure-Mobility-Client to blacklist (found by the value of CFBundleIdentifier key in /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app/Contents/Info.plist).
 * Installed “rectangle” (new spectacle) to align windows. https://github.com/rxhanson/Rectangle   . Changed hotkey to Winkey+Arrow for left/right half attachment, Maximize and Restore. 
 * Continue where you left off in chrome: exit by command+Q and not cached.
-* To minimize all windows, press `Command+Options+H+M` or focus on non-finder window and press `Command+Control+MouseClickOnDesktopArea` . 
+* To minimize all windows, press `Command+Options+H+M` or focus on non-finder window and press `Command+Options+MouseClickOnDesktopArea` . 
 * Switch user while leaving current on: run from terminal  ` "/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession" -suspend`
 ### Terminal:
 * iTerm2
