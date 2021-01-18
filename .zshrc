@@ -15,6 +15,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias python="python3"
 alias realpath="python -c 'import os,sys;print(os.path.realpath(sys.argv[1]))'"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # obsolete mac tweaks
 #bindkey "\033[5C" forward-word
