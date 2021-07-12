@@ -1,6 +1,4 @@
 # mac tweaks
-### Mouse:
-* DROPPED: Try razer for mac to fix external mouse wheel → BROKE MAC.
 ### Keys: 
 * Key repeat instead of window: defaults write -g ApplePressAndHoldEnabled -bool true  .
 * Replaced modifiers command and control (swapped) for razer external keyboard, done via macos settings 'edit modifiers' for specific external device.  Ctrl=Command[], Win=Ctrl^, Alt=Option&.
@@ -45,7 +43,7 @@
 * ~/.vimrc : refer to https://github.com/sharpblade4/confs/blob/main/.vimrc
 ### AppleScripts:
 * run by `osascript ~/Documents/keepAlive.scpt`
-* KeepAlive (leaves mac on)
+* DROPPED: KeepAlive (leaves mac on)
 	```
 	repeat
 		tell application "System Events" to keystroke "0" using command down
@@ -53,7 +51,7 @@
 		delay 340
 	end repeat
 	```
-	
+   * instead, to keep mac on I'm using https://github.com/newmarcel/KeepingYouAwake
 * HealthReminder
 	```
 	tell application "System Events" to activate
@@ -67,3 +65,6 @@
 ### Widgets
 * Installed open-source calendar widget that will raise from menubar: https://www.mowglii.com/itsycal/ . Set the format to `E dd/MM/YYYY H:mm` and hidden icon+events.
 * To change order of icons in menu-bar, press CMD and drag the icon. 
+
+### Mouse:
+* DROPPED: Try razer for mac to fix external mouse wheel → BROKE MAC.
