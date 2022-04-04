@@ -68,3 +68,6 @@
 
 ### Mouse:
 * DROPPED: Try razer for mac to fix external mouse wheel → BROKE MAC.
+
+### Display
+* sync and control brightness of external monitor: https://github.com/MonitorControl/MonitorControl
